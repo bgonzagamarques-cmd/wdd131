@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #d63384; /* Tom de rosa alinhado à preferência de estilo */
+    --secondary-color: #ffc107; /* Tom de amarelo */
+    --text-color: #333333;
+    --background-color: #f9f9f9;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: #1f2937;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header span#titulo-curso {
+    display: block; /* Exibe como bloco para centralizar e organizar o topo[span_5](start_span)[span_5](end_span) */
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex; /* Utiliza CSS Flexbox na navegação[span_6](start_span)[span_6](end_span) */
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav a:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid; /* Organiza os cartões usando CSS Grid[span_7](start_span)[span_7](end_span) */
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr; /* Duas colunas em telas maiores */
+    }
+    
+    main h1 {
+        grid-column: 1 / -1; /* O título ocupa a largura inteira */
+        text-align: center;
+    }
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
