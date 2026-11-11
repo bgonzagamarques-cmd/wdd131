@@ -1,32 +1,20 @@
-:root {
-    --primary-color: #007A2C;
-    --accent-color: #ccb200;
-    --dark-neutral: #1a1a1a;
-    --light-neutral: #f4f6f4;
-    --white: #ffffff;
-    --font-heading: 'Montserrat', sans-serif;
-    --font-body: 'Roboto', sans-serif;
-}
-
+/* Reset Básico */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-body);
-    background-color: var(--light-neutral);
-    color: var(--dark-neutral);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #1a1a1a;
 }
 
-/* Header & Menu Hambúrguer */
+/* Header */
 header {
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: #007A2C;
+    color: #ffffff;
     padding: 1rem;
 }
 
@@ -36,18 +24,42 @@ header {
     align-items: center;
 }
 
-header h1 {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #005a20;
 }
 
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+.navigation li a {
+    display: block;
+    color: #ffffff;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navigation li a:hover {
+    background-color: #ccb200;
+    color: #1a1a1a;
+}
+
+/* Botão Hamburger */
 #menu-btn {
     background: none;
     border: none;
-    font-size: 2rem;
-    color: var(--white);
+    color: #ffffff;
+    font-size: 1.8rem;
     cursor: pointer;
-    padding: 0.2rem 0.5rem;
 }
 
 #menu-btn::before {
@@ -56,54 +68,19 @@ header h1 {
 
 #menu-btn.open::before {
     content: "❌";
-    font-size: 1.5rem;
 }
 
-/* Navegação Flex Mobile */
-nav {
-    margin-top: 0.5rem;
-}
-
-.navigation {
-    list-style: none;
-    display: none;
-    flex-direction: column;
-}
-
-.navigation.open {
-    display: flex;
-}
-
-.navigation li a {
-    display: block;
-    padding: 0.75rem 1rem;
-    color: var(--white);
-    text-decoration: none;
-    font-family: var(--font-heading);
-    font-weight: 600;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.navigation li a:hover {
-    background-color: var(--accent-color);
-    color: var(--dark-neutral);
-}
-
-/* Conteúdo Principal & Grid (1 Coluna Mobile) */
+/* Galeria de Templos */
 main {
-    max-width: 900px;
+    padding: 1rem;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 1.5rem 1rem;
-    flex: 1;
-    width: 100%;
 }
 
-main h2 {
-    font-family: var(--font-heading);
+h2 {
     text-align: center;
     margin-bottom: 1.5rem;
-    color: var(--primary-color);
+    color: #007A2C;
 }
 
 .galeria {
@@ -113,11 +90,11 @@ main h2 {
 }
 
 figure {
-    background-color: var(--white);
+    background: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-align: center;
 }
 
@@ -130,24 +107,14 @@ figure img {
 
 figcaption {
     padding: 0.75rem;
-    font-weight: 500;
-    color: var(--dark-neutral);
+    font-weight: 600;
 }
 
-/* Rodapé */
+/* Footer */
 footer {
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: #007A2C;
+    color: #ffffff;
     text-align: center;
     padding: 1rem;
-    font-size: 0.9rem;
     margin-top: 2rem;
-}
-
-footer p {
-    margin: 0.3rem 0;
-}
-figure img {
-    width: 100%; /* Faz a imagem ocupar 100% do container */
-    height: auto;
 }
