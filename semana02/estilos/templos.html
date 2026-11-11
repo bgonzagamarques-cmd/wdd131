@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum do Templo</title>
+    <meta name="description" content="Página responsiva de galeria de fotos de templos para o curso WDD 131.">
+    <meta name="author" content="Beatriz Gonzaga Marques Albuquerque">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS (Mobile First) -->
+    <link rel="stylesheet" href="estilos/templos.css">
+    <link rel="stylesheet" href="estilos/templos-grandes.css" media="(min-width: 650px)">
+
+    <!-- JavaScript Adiado -->
+    <script src="scripts/templos.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Álbum do Templo</h1>
+            <button id="menu-btn" aria-label="Abrir Menu"></button>
+        </div>
+        <nav>
+            <ul id="nav-list" class="navigation">
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Antigo</a></li>
+                <li><a href="#">Novo</a></li>
+                <li><a href="#">Grande</a></li>
+                <li><a href="#">Pequeno</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Galeria de Templos</h2>
+        <div class="galeria">
+            <figure>
+                <img src="estilos/imagens/salvador.jpg" alt="Templo de Salvador Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Salvador Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="estilos/imagens/salt-lake.jpg" alt="Templo de Salt Lake" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Salt Lake</figcaption>
+            </figure>
+            <figure>
+                <img src="estilos/imagens/sao-paulo.jpg" alt="Templo de São Paulo Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo de São Paulo Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="estilos/imagens/curitiba.jpg" alt="Templo de Curitiba Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Curitiba Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="estilos/imagens/manaus.jpg" alt="Templo de Manaus Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Manaus Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="estilos/imagens/fortaleza.jpg" alt="Templo de Fortaleza Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Fortaleza Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="estilos/imagens/rio.jpg" alt="Templo de Rio de Janeiro Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Rio de Janeiro Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="estilos/imagens/brasilia.jpg" alt="Templo de Brasília Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Brasília Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="estilos/imagens/belem.jpg" alt="Templo de Belém Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Belém Brasil</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Beatriz Gonzaga Marques Albuquerque | Bahia, Brasil</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
