@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapada Diamantina - Bahia, Brasil</title>
+    <meta name="description" content="Informações, dados geográficos e clima atual da Chapada Diamantina, Bahia, Brasil.">
+    <meta name="author" content="Beatriz Gonzaga Marques Albuquerque">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/local.css">
+    <script src="scripts/local.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Chapada Diamantina</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+                <img src="images/hero-small.webp" alt="Vista panorâmica da Chapada Diamantina, Bahia" width="500" height="333">
+            </picture>
+        </div>
+
+        <section class="card dados">
+            <h2>Dados</h2>
+            <ul>
+                <li><strong>Área:</strong> <span>38.000 km²</span></li>
+                <li><strong>População:</strong> <span>~370.000 hab.</span></li>
+                <li><strong>País:</strong> <span>Brasil (Bahia)</span></li>
+                <li><strong>Idioma:</strong> <span>Português</span></li>
+                <li><strong>Moeda:</strong> <span>Real (BRL)</span></li>
+                <li><strong>Fuso Horário:</strong> <span>UTC-3 (Brasília)</span></li>
+                <li><strong>Código DDD:</strong> <span>+55 (75)</span></li>
+                <li><strong>Cidade Base:</strong> <span>Lençóis</span></li>
+            </ul>
+        </section>
+
+        <section class="card clima">
+            <h2 class="clima-titulo">Clima</h2>
+            <img src="images/clima.svg" alt="Ícone de tempo ensolarado com poucas nuvens" class="clima-icone-mobile" width="64" height="64">
+            <ul>
+                <li><strong>Temperatura:</strong> <span id="temperatura">28</span> °C</li>
+                <li><strong>Condições:</strong> <span>Ensolarado</span></li>
+                <li><strong>Vento:</strong> <span id="vento">12</span> km/h</li>
+                <li><strong>Sensação Térmica:</strong> <span id="sensacao-termica"></span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌻 Beatriz Gonzaga Marques Albuquerque 🌻 Bahia, Brasil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
